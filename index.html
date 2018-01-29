@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<title>Andika Harlan Bio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="iconAnimated.css">
+<!-- css -->
+<style>
+    html, body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Roboto", sans-serif
+    }
+
+    .quoteFont {
+        font-family: "Tangerine", sans-serif;
+    }
+
+    .myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+    }
+</style>
+
+<head>
+    <!-- Javascript & JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Smooth scroll to the top -->
+    <script>
+        $(document).ready(function () {
+            $('#topBtn').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+            $(movingBar1())
+            $(movingBar2())
+            $(movingBar3())
+            $(movingBar4())
+            $(movingBar5())
+        })
+    </script>
+
+    <!-- Moving progress bar -->
+    <script>
+        $(document).ready(function () {
+            $(movingBar1())
+            $(movingBar2())
+            $(movingBar3())
+            $(movingBar4())
+            $(movingBar5())
+        })
+
+        function movingBar1() {
+            var elem = document.getElementById("skillBar1");
+            var width = 10;
+            var id = setInterval(frame, 40);
+
+            function frame() {
+                if (width >= 90) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    elem.innerHTML = width * 1 + '%';
+                }
+            }
+        }
+
+        function movingBar2() {
+            var elem = document.getElementById("skillBar2");
+            var width = 10;
+            var id = setInterval(frame, 40);
+
+            function frame() {
+                if (width >= 75) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    elem.innerHTML = width * 1 + '%';
+                }
+            }
+        }
+
+        function movingBar3() {
+            var elem = document.getElementById("skillBar3");
+            var width = 10;
+            var id = setInterval(frame, 40);
+
+            function frame() {
+                if (width >= 50) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    elem.innerHTML = width * 1 + '%';
+                }
+            }
+        }
+
+        function movingBar4() {
+            var elem = document.getElementById("skillBar4");
+            var width = 10;
+            var id = setInterval(frame, 40);
+
+            function frame() {
+                if (width >= 50) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    elem.innerHTML = width * 1 + '%';
+                }
+            }
+        }
+
+        function movingBar5() {
+            var elem = document.getElementById("skillBar5");
+            var width = 10;
+            var id = setInterval(frame, 40);
+
+            function frame() {
+                if (width >= 30) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    elem.innerHTML = width * 1 + '%';
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+<div>
+    <video autoplay muted loop class="myVideo">
+        <source src="dots.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+</div>
+<!-- Page Container -->
+<div class=" w3-content w3-margin-top" style="max-width:1400px;">
+
+    <!-- The Grid -->
+    <div class="w3-row-padding">
+
+        <!-- Left Column -->
+        <div class="w3-third">
+
+            <div class="w3-white w3-text-grey w3-card-4">
+                <div class="w3-display-container">
+                    <img src="fix.jpg" style="width:100%" alt="Avatar">
+                    <div class="w3-display-bottomleft w3-container w3-text-dark-gray">
+                        <h2 style="text-shadow: 1px 1px 0 #444;"><b>Andika Harlan</b></h2>
+                    </div>
+                </div>
+                <div class="w3-container">
+                    <p>
+                        <i class="fa fa-briefcase fa-fw faa-horizontal animated-hover w3-margin-right w3-large w3-text-blue-gray"></i>Programmer
+                    </p>
+                    <p>
+                        <i class="fa fa-home fa-fw faa-bounce animated-hover w3-margin-right w3-large w3-text-blue-gray"></i>Indonesia
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope fa-fw faa faa-shake animated-hover w3-margin-right w3-large w3-text-blue-gray"></i>andikaharlan@outlook.co.id
+                    </p>
+                    <p>
+                        <i class="fa fa-phone fa-fw faa-ring animated-hover w3-margin-right w3-large w3-text-blue-gray"></i>(+62)
+                        821-3926-6925</p>
+                    <hr>
+
+                    <p class="w3-large"><b><i
+                            class="fa fa-file-code-o faa-shake animated-hover faa-slow fa-fw w3-margin-right w3-text-blue-gray"></i>Skills</b>
+                    </p>
+                    <p>Web Development</p>
+                    <div class="w3-light-grey w3-round-xlarge w3-small">
+                        <div id="skillBar1" class="w3-container w3-center w3-round-xlarge w3-blue-gray"
+                             style="width:90%">90%
+                        </div>
+                    </div>
+                    <p>Software Development</p>
+                    <div class="w3-light-grey w3-round-xlarge w3-small">
+                        <div id="skillBar2" class="w3-container w3-center w3-round-xlarge w3-blue-gray"
+                             style="width:75%">75%
+                        </div>
+                    </div>
+                    <p>Network Development</p>
+                    <div class="w3-light-grey w3-round-xlarge w3-small">
+                        <div id="skillBar3" class="w3-container w3-center w3-round-xlarge w3-blue-gray"
+                             style="width:50%">50%
+                        </div>
+                    </div>
+                    <p>Database</p>
+                    <div class="w3-light-grey w3-round-xlarge w3-small">
+                        <div id="skillBar4" class="w3-container w3-center w3-round-xlarge w3-blue-gray"
+                             style="width:50%">50%
+                        </div>
+                    </div>
+                    <p>Mobile Development</p>
+                    <div class="w3-light-grey w3-round-xlarge w3-small">
+                        <div id="skillBar5" class="w3-container w3-center w3-round-xlarge w3-blue-gray"
+                             style="width:30%">30%
+                        </div>
+                    </div>
+                    <br>
+
+                    <p class="w3-large w3-text-theme"><b><i
+                            class="fa fa-globe faa-spin animated-hover faa-slow fa-fw w3-margin-right w3-text-blue-gray"></i>Languages</b>
+                    </p>
+                    <p>Indonesian</p>
+                    <div class="w3-light-grey w3-text-blue-gray w3-center w3-round-xlarge">
+                        <p><i class="fa fa-star faa-pulse animated faa-slow "></i>
+                            <i class="fa fa-star faa-pulse animated faa-slow "></i>
+                            <i class="fa fa-star faa-pulse animated faa-slow "></i>
+                            <i class="fa fa-star faa-pulse animated faa-slow "></i>
+                            <i class="fa fa-star faa-pulse animated faa-slow "></i>
+                        </p>
+                    </div>
+                    <p>English</p>
+                    <div class="w3-light-grey w3-text-blue-gray w3-center w3-round-xlarge">
+                        <p><i class="fa fa-star faa-pulse animated faa-slow "></i>
+                            <i class="fa fa-star faa-pulse animated faa-slow "></i>
+                            <i class="fa fa-star faa-pulse animated faa-slow "></i>
+                            <i class="fa fa-star faa-pulse animated faa-slow "></i>
+                            <i class="fa fa-star-o faa-pulse animated faa-slow "></i>
+                        </p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+
+            <!-- End Left Column -->
+        </div>
+
+        <!-- Right Column -->
+        <div class="w3-twothird">
+
+            <div class="w3-container w3-card w3-white w3-margin-bottom">
+                <h2 class="w3-text-grey w3-padding-16"><i
+                        class="fa fa-lightbulb-o faa-tada animated-hover faa-slow fa-fw w3-margin-right w3-xxlarge w3-text-blue-gray"></i>About Me
+                </h2>
+                <div class="w3-container">
+                    <p>I am a fresh graduate student at University of Brawijaya, Indonesia with bachelor degree
+                        in Computer Science. I seek an opportunity to utilize and capitalize my skills and
+                        experience
+                        as well as my passion in the field of Information Technology industry. I believe my
+                        eagerness
+                        and hardworking proficiency would help quality company to achieve any goal that given. </p>
+                    <br>
+                </div>
+            </div>
+
+            <div class="w3-container w3-card w3-white w3-margin-bottom">
+                <h2 class="w3-text-grey w3-padding-16"><i
+                        class="fa fa-suitcase faa-wrench animated-hover faa-slow fa-fw w3-margin-right w3-xxlarge w3-text-blue-gray"></i>Work
+                    Experience
+                </h2>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Co-Founder -- Front End Developer</b></h5>
+                    <h6 class="w3-text-blue-gray"><i class="fa fa-building fa-fw w3-margin-right"></i>Solo Web
+                        House</h6>
+                    <h6 class="w3-text-blue-gray"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>Solo, East
+                        Java,
+                        Indonesia</h6>
+                    <h6 class="w3-text-blue-gray"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2018 -
+                        <span
+                                class="w3-tag w3-blue-gray w3-round">Current</span></h6>
+                    <p>As a founder, i always dream high and big. With personal and technical skills as it
+                        foundation,
+                        i always eager to strive forward to success. With long and hard way ahead, i expect a lot of
+                        failure and i would embrace it. Because the more i fail, more i learn. More i learn, more
+                        closer
+                        i am to succeeed.</p>
+                    <hr>
+                </div>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Freelance Web Developer</b></h5>
+                    <h6 class="w3-text-blue-gray"><i class="fa fa-building fa-fw w3-margin-right"></i>Freelance</h6>
+                    <h6 class="w3-text-blue-gray"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>Malang, East
+                        Java, Indonesia</h6>
+                    <h6 class="w3-text-blue-gray"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2016 - Dec
+                        2017</h6>
+                    <p>Always learning and finishing my final project for my bachelor degree.</p>
+                    <hr>
+                </div>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Internship Student -- Web Development</b></h5>
+                    <h6 class="w3-text-blue-gray"><i class="fa fa-building fa-fw w3-margin-right"></i>PT. Astra
+                        Isuzu
+                        Motor Indonesia</h6>
+                    <h6 class="w3-text-blue-gray"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>Surabaya,
+                        East
+                        Java, Indonesia</h6>
+                    <h6 class="w3-text-blue-gray"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2016 -
+                        Sept
+                        2016</h6>
+                    <p>Provided assist with common task in office, as well as analyze-design-implement web design
+                        project that serves as an app that helps user to troubleshooting their car problems with
+                        ease. </p><br>
+                </div>
+            </div>
+
+            <div class="w3-container w3-card w3-white">
+                <h2 class="w3-text-grey w3-padding-16"><i
+                        class="fa fa-book faa-float animated-hover faa-slow fa-fw w3-margin-right w3-xxlarge w3-text-blue-gray"></i>Education</h2>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Bachelor Degree -- Computer Science</b></h5>
+                    <h6 class="w3-text-blue-gray"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>University
+                        of Brawijaya</h6>
+                    <h6 class="w3-text-blue-gray"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>Malang, East
+                        Java, Indonesia</h6>
+                    <h6 class="w3-text-blue-gray"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2017
+                    </h6>
+                    <hr>
+                </div>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Senior High School</b></h5>
+                    <h6 class="w3-text-blue-gray"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>SMAN 1
+                        Lumajang</h6>
+                    <h6 class="w3-text-blue-gray"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>Lumajang,
+                        East
+                        Java, Indonesia</h6>
+                    <h6 class="w3-text-blue-gray"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013
+                    </h6>
+                    <hr>
+                </div>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Junior High School</b></h5>
+                    <h6 class="w3-text-blue-gray"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>SMPN 1
+                        Lumajang</h6>
+                    <h6 class="w3-text-blue-gray"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>Lumajang,
+                        East
+                        Java, Indonesia</h6>
+                    <h6 class="w3-text-blue-gray"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2007 - 2010
+                    </h6>
+                    <hr>
+                </div>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Elementary School</b></h5>
+                    <h6 class="w3-text-blue-gray"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>SD
+                        Al-ikhlash Lumajang</h6>
+                    <h6 class="w3-text-blue-gray"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>Lumajang,
+                        East
+                        Java, Indonesia</h6>
+                    <h6 class="w3-text-blue-gray"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2001 - 2007
+                    </h6>
+                    <br>
+                </div>
+            </div>
+
+            <!-- End Right Column -->
+        </div>
+
+        <!-- End Grid -->
+    </div>
+
+    <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-dark-gray w3-margin-top">
+    <div class="w3-display-container" style="height: 150px">
+        <div class="w3-display-topright">
+            <button id="topBtn" class="w3-button w3-light-grey">
+                <i class="fa fa-arrow-up w3-margin-right"></i>To the top
+            </button>
+        </div>
+        <div class="w3-display-topmiddle">
+            <p class="quoteFont" style="font-size: 30px">“You may say I'm a dreamer, but I'm not the only one. I
+                hope
+                someday you'll join us. And the world will live as one.”<br>
+                ―<b> John Lennon</b></p>
+        </div>
+        <div class="w3-display-left">
+            Follow me on
+            <div class="w3-xlarge">
+                <div>
+                    <a href="https://www.facebook.com/AndikaHarlan"><i
+                            class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                    <a href="https://www.instagram.com/andikahrln/"><i
+                            class="fa fa-instagram w3-hover-opacity"></i></a>
+                    <a href="https://twitter.com/AndikaHrln"><i
+                            class="fa fa-twitter w3-hover-opacity"></i></a>
+                    <a href="https://www.linkedin.com/in/andikaharlan/"><i
+                            class="fa fa-linkedin w3-hover-opacity"></i></a>
+                    <a href="https://github.com/AndikaHarlan"><i
+                            class="fa fa-github w3-hover-opacity"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
